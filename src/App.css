@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* You can't use hex colours e.g. #fff or #000 if you want to set an opacity.*/
+
+:root {
+    --main-bg-color: 33,37,36;
+    --text-color: 255, 255, 255;
+    --black-color: 0, 0, 0;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.logo {
+    font-weight: normal;
+    font-size: 20px;
+    margin: 50px 0 0 50px;
+    color: rgb(var(--text-color));
+    position: absolute;
+    top: 0;
+    background-color: rgba(var(--main-bg-color)); /* Couldn't use hex colour because of 0.4 opacity. */
+    padding: 15px;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-content {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.random-button {
+    background-color: rgb(var(--main-bg-color));
+    color: rgb(var(--text-color));
+    border-radius: 50px;
+    padding: 15px 50px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: bold;
+    border: none;
+}
+.random-button:hover {
+    border: 1px solid rgb(var(--main-bg-color));
+    background-color: rgb(var(--main-bg-color), 0.9);
+}
+
+/*
+    Find out if it's possible to reduce down the code below.
+    Targeting a repeatedly seems like an overkill.
+*/
+
+a {
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(var(--text-color));;
+}
+
+.circles {
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(var(--main-bg-color));
+    color: rgb(var(--text-color));
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border: none;
+}
+
+.circles:hover {
+    border: 1px solid rgb(var(--main-bg-color));
+    background-color: rgb(var(--main-bg-color), 0.9);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 30px;
+    margin-bottom: 45px;
+    color: rgb(var(--text-color));
+}
