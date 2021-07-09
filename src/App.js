@@ -30,9 +30,12 @@ function App() {
                         </a>
                         <a
                             className="circles"
-                            href="https://twitter.com/intent/tweet?text=Checkout%20this%20image%20generator%20I%20have%20made%20using%20React">
+                            target="_blank"
+                            href={`https://twitter.com/share?ref_src=${randomImage}`}
+                        >
                                 <i className="fab fa-twitter"></i>
                         </a>
+                        <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script>
                     </div>
                     {/* Footer */}
                     <p className="footer">
@@ -50,3 +53,5 @@ function App() {
 }
 
 export default App;
+
+
