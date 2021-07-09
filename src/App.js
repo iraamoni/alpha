@@ -31,7 +31,7 @@ function App() {
                         <a
                             className="circles"
                             target="_blank"
-                            href={`https://twitter.com/share?ref_src=${randomImage}`}
+                            href={`https://twitter.com/share?ref_src=${randomImage.src}`}
                         >
                                 <i className="fab fa-twitter"></i>
                         </a>
